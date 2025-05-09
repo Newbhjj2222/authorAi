@@ -316,7 +316,7 @@ function TextGenerator(prompt, episodicOptions = null) {
         // Characters (names common in Rwanda)
 
         characters: [
-  "Mutara", "Kagame", "Nyiramacumu", "Gasana", "Mukamana", "Rusanganwa", 
+  "Jimmy", "Kagame", "Mama Gaju", "Gasana", "Mukamana", "Rusanganwa", "Gaju",
   "Uwimana", "Nyirarukundo", "Bizimana", "Nyirahabimana", "Murenzi", 
   "Nyiraneza", "Ndayisenga", "Ntawukuliryayo", "Umutoni", "Uwase", 
   "Niyonzima", "Nshimiyimana", "Ishimwe", "Cyusa", "Umuhoza", "Mugisha",
@@ -331,7 +331,7 @@ function TextGenerator(prompt, episodicOptions = null) {
   "Samson", "Belinda", "Richard", "Assumpta", "Frank", "Cynthia", "Jean Paul", "Edith", "Ericson", "Claudine",
   "Gil", "Judith", "Tom", "Gloria", "Bryan", "Ruth", "Steven", "Florence", "Steve", "Alice",
   "Vincent", "Tina", "Ian", "Peace", "Ezekiel", "Hope", "Godfrey", "Joy"
-]
+],
         // Places
             places: [
               // Ibyo wari usanzwe ufite
@@ -374,10 +374,10 @@ function TextGenerator(prompt, episodicOptions = null) {
         // Time expressions
         timeExpressions: [
   // Ibihe wari usanganywe
-  "Kare cyane", "Mu gitondo", "Saa sita z'amanywa", "Mu masaa ya nimugoroba", 
-  "Ijoro ryinamye", "Bukeye", "Hashize iminsi", "Mu kwezi gushize", 
+  "Kare cyane", "Mu gitondo", "Saa sita z'amanywa", "Mu ma saha ya ni mugoroba", 
+  "Ijoro rinishye", "Bukeye", "Hashize iminsi", "Mu kwezi gushize", 
   "Umunsi umwe", "Umwaka ushize", "Ejo hashize", "Biratinda", "Mu gihe cy'ihinga", 
-  "Mu gihe cy'isarura", "Mu gihe cya kera", "Imyaka itanu ishize", "Uyu mwaka",
+  "Mu gihe cy'isarura", "Mu gihe cya kera", "Imyaka itanu ishize", "Uyu mwaka", "umwaka utaha", "imyaka 10 izaza", "imyaka 100 ishize", "saa mbiri",
 
   // Ibihe bishya by’inyongera
   "Ejo hazaza", "Uyu munsi", "Uyu munsi nijoro", "Mu masaha make ari imbere",
@@ -413,7 +413,7 @@ function TextGenerator(prompt, episodicOptions = null) {
   "w'intege nke", "ufite ubushake", "udasanzwe", "uzwi cyane",
 
   // Ibindi bisobanuro by'inyongera
-  "w'ubwiza bwo mu mutima", "w'umunyamurava", "w'umutima mwiza", "w'umunyantege", 
+  "w'ubwiza bwo mu mutima", "w'umunyamurava", "w'umutima mwiza", "w'umunyantegenke", 
   "ufite ubushobozi bwo kwihangana", "w'umugabo w'ikirenga", "w'intyoza", "w'umuhanga mu bijyanye na...", 
   "w'icyizere", "ufite imbaraga zihariye", "w'umunyamwete", "ufite kwiyemeza", "w'umunyabushobozi", 
   "w'ubutwari", "w'icyizere gikomeye", "w’umunyakuri", "w'ijwi ryiza", "w'umushakashatsi", 
@@ -481,7 +481,7 @@ function TextGenerator(prompt, episodicOptions = null) {
             "Amazi atemba mu bigega", "Ikinyuranyo cy’umuyaga", "Ibitare by’imisozi", "Amaso y’imvura",
             "Ikirere cy’ingufu", "Amateka y’ibyatsi", "Ibyihishe mu bigega", "Igihe cy’umuyaga w’intambara",
             "Imyitozo y’imisozi", "Icyerekezo cy’ibiti", "Uruzi rw’imisozi", "Ibisumo by’amazi",
-            "Inzira z’amazi atemba", "Ihuriro ry'inyamaswa", "Ibigega by'ubuzima", "Imisozi y'ikirere"
+            "Inzira z’amazi atemba", "Ihuriro ry'inyamaswa", "Ibigega by'ubuzima", "ikirere gisa neza", "Imisozi y'ikirere"
         ],
         
         // Emotions
@@ -536,70 +536,70 @@ function TextGenerator(prompt, episodicOptions = null) {
         
         // Conversation starters
         conversations: [
-            "Yaravuze ati", "Yarasubije ati", "Yarabajije ati", "Yarasekeye ati", 
-            "Yatangajwe ati", "Yumvise agashya ati", "Yarababaye ati", 
-            "Yaratontomye ati", "Yaratangaye ati", "Yaributswe ati", "Yaravuze mu ijwi ricagase ati", 
-            "Yaravuze agahinda", "Yaravuze agashya", "Yaratunguwe n'icyo yabonye", 
-            "Yarashidikanye", "Yarashoboye kuvuga", "Yaratunguwe no kumva ibyo yavuze", 
+            "yavuze ati", "Yarasubije ati", "Yarabajije ati", "Yarasetsee ati", 
+            "Yatangajwe nibyo nyuma ati", "Yumvise bitangaje ati", "Yarababaye ati", 
+            "Yaratontomye ati", "Yaratangaye ati", "Yaributse, nyuma ati", "Yavuze mu ijwi ricagase ati", 
+            "Yavuganye agahinda ati", "Yavuze agashya kabaye, ati", "Yatunguwe n'icyo yabonye", 
+            "Yarashidikanyeje", "Yashoboye kuvuga", "Yatunguwe no kumva ibyo yavuze", 
             "Yagaragaje ubushobozi", "Yavuze nk'uwiteguye", "Yahise avuga ko", 
-            "Yararizihirije", "Yashubije mu buryo butunguranye", "Yarahise abwira", 
+            "Yararizihirije", "Yashubije mu buryo butunguranye", "Yahise ambwira", 
             "Yarebye hejuru ati", "Yaraganiriye mu mucyo", "Yagiye abaza", 
-            "Yafashe umwanzuro wo", "Yaragarutse muri conversation", "Yavuze atuje", 
-            "Yasubije mu buryo butangaje", "Yaravuze biryoheye amatwi", 
-            "Yaratangaje abantu bose", "Yaramusabye ko", "Yashatse kumenya", 
+            "Yafashe umwanzuro wo", "Yagarutse mu kiganiro", "Yavuze atuje ati", 
+            "Yasubije mu buryo butangaje", "Yavuze biryoheye amatwi", 
+            "Yatangaje abantu bose", "Yamusabye ko", "Yashatse kumenya", 
             "Yavuze ibyo yararimo gukora", "Yarasubije mu buryo butunguranye", "Yahise atangira kuganira", 
             "Yatangiye kujya yibaza", "Yashatse gukora ubushakashatsi", "Yavuze ibintu byoroshye", 
-            "Yaribagiwe igitekerezo cye", "Yaravuga adategwa", "Yagaragaje ubwenge", "Yaratangaye kuko", 
-            "Yahise arangiza ijambo", "Yaramubwiye ko", "Yavuze ibyo yari yiteze", 
-            "Yarabaye nk'uwizera", "Yavuze mu mutuzo", "Yarabajije impamvu", 
-            "Yavuze amaso y'amajyambere", "Yarageze aho abwira abandi", "Yahise agaragaza ko", 
-            "Yarasobanuriye abantu", "Yavuze igitekerezo kiza", "Yagize icyo avuga", "Yavuze akanyamuneza", 
+            "Yibagiwe igitekerezo cye", "Yavuga adategwa", "Yagaragaje ubwenge", "Yaratangaye kuko!", 
+            "Yahise arangiza ijambo", "Yamubwiye ko", "Yavuze ibyo yari yiteze", 
+            "Yabaye nk'uwizera", "Yavuze mu mutuzo", "Yabajije impamvu", 
+            "Yavuze amaso yayamuhanze", "Yageze aho abwira abandi", "Yahise agaragaza ko", 
+            "Yasobanuriye abantu", "Yavuze igitekerezo kiza", "Yagize icyo avuga", "Yavuze afite akanyamuneza", 
             "Yarishimye cyane", "Yavuze ibintu by'ingirakamaro", "Yavuze uko ibintu byifashe", 
-            "Yasubije mu buryo bwiza", "Yaratangaje abari aho", "Yatangiye gusubiramo", 
-            "Yaravuze ko", "Yatanze igitekerezo gishya", "Yavuze yishimye", "Yarasekeje abantu", 
-            "Yarishimye ku buryo butangaje", "Yasubije nk'uwatekereje cyane", "Yashimye icyo yavuze", 
-            "Yashatse gukomeza kuganira", "Yavuze ko atunguwe", "Yarabajije akamaro", 
-            "Yavuze ibintu by'ingenzi", "Yarasobanuriye neza", "Yaratumye abantu bahuriza ku gitekerezo", 
-            "Yavuze ibyo atari asanzwe avuga", "Yaratangiye kuvuga ku bijyanye na", 
-            "Yasubije mu buryo bwo kugaragaza ukuri", "Yaravuze ku buzima bwe", "Yavuze ibitekerezo byiza", 
-            "Yaravuga yicaye mu ntebe", "Yatangiye kwibaza byinshi", "Yavuze ibintu byoroshye", 
-            "Yavuze ibintu byibanda ku mutima", "Yarafashe icyemezo cyo", "Yaravuze yihanganye", 
-            "Yaraganiriye nk'umuntu ufite umutekano", "Yavuze mu buryo bwiza", "Yavuze ibyo yari yumvise", 
-            "Yaravuze ku bijyanye n'umuryango", "Yatangaje ko", "Yavuze ibintu byahinduye byinshi", 
-            "Yaravuze byatunguye abantu", "Yarabonye igisubizo", "Yaravuze yifuza kumenya", 
-            "Yavuze ibyo yatekereje", "Yavuze mu gihe cy'amarangamutima", "Yarashidikanye ku byo yavuze", 
+            "Yasubije mu buryo bwiza", "Yatangaje abari aho", "Yatangiye gusubiramo", 
+            "Yavuze ko", "Yatanze igitekerezo gishya", "Yavuze yishimye", "Yasekeje abantu", 
+            "Yishimye ku buryo butangaje", "Yasubije nk'uwatekereje cyane", "Yashimye icyo yavuze", 
+            "Yashatse gukomeza kuganira", "Yavuze ko atunguwe", "Yabajije igifute akamaro", 
+            "Yavuze ibintu by'ingenzi", "Yaransobanuriye neza", "Yatumye abantu bahuriza ku gitekerezo", 
+            "Yavuze ibyo atari asanzwe avuga", "Yatangiye kuvuga ku bijyanye na", 
+            "Yasubije mu buryo bwo kugaragaza ukuri", "Yavuze ku buzima bwe", "Yavuze ibitekerezo byiza", 
+            "Yavugaga, yicaye mu ntebe", "Yatangiye kwibaza byinshi", "Yavuze ibintu byoroshye", 
+            "Yavuze ibintu byibanda ku buzima", "Yafashe icyemezo cyo", "Yavuze yihanganye", 
+            "Yaganiriye nk'umuntu ufite umutekano", "Yavuze mu buryo bwiza", "Yavuze ibyo yari yumvise", 
+            "Yavuze ku bijyanye n'umuryango", "Yatangaje ko", "Yavuze ibintu byahinduye byinshi", 
+            "avuze byatunguye abantu", "Yabonye igisubizo", "Yavuze yifuza kumenya", 
+            "Yavuze ibyo yatekereje", "Yavuze mu gihe cy'amarangamutima", "Yashidikanyaga ku byo yavuze", 
             "Yavuze ko byari bidasanzwe", "Yarabwiye abantu ko", "Yaratangiye kubona ukuri", 
             "Yashatse kumenya byinshi", "Yavuze amagambo abahumuriza", "Yavuze ko atunguwe n'ibyabaye", 
             "Yashatse kuganira ku bibazo", "Yavuze ko ibintu byabaye", "Yavuze ibitekerezo bihamye", 
             "Yahise avuga byinshi", "Yavuze ko ibyo yavuze byari bifite ishingiro", 
-            "Yarabajije icyo gukora", "Yaravuze akantu", "Yavuze ibintu byoroheje", "Yavuze mu nzira nziza", 
+            "Yarabajije icyo gukora", "yavuze akantu", "Yavuze ibintu byoroheje", "Yavuze mu nzira nziza", 
             "Yavuze ko byari byose", "Yahise atangira kuganira ku bintu", "Yatangiye kubona isura nshya", 
-            "Yaravuze ibitekerezo by'ingirakamaro", "Yashatse kubaza byinshi", "Yaravuze n'ijwi rituje", 
-            "Yarahise abwira abandi ko", "Yaravuze kubw'ikizere", "Yavuze ibitekerezo bishingiye ku bintu", 
+            "yavuze ibitekerezo by'ingirakamaro", "Yashatse kubaza byinshi", "yavuze n'ijwi rituje", 
+            "Yarahise abwira abandi ko", "yavuze kubw'ikizere", "Yavuze ibitekerezo bishingiye ku bintu", 
             "Yaratunguwe no kumva ko", "Yashatse kumenya impamvu", "Yavuze amagambo aganisha ku kubana", 
-            "Yaravuze mu buryo busobanutse", "Yavuze ngo ibikorwa byari bifite akamaro", 
-            "Yaravuze impamvu yo kwihangana", "Yaravuze ko ibihe byahindutse", "Yavuze ku bijyanye n'imibanire", 
+            "yavuze mu buryo busobanutse", "Yavuze ngo ibikorwa byari bifite akamaro", 
+            "yavuze impamvu yo kwihangana", "yavuze ko ibihe byahindutse", "Yavuze ku bijyanye n'imibanire", 
             "Yavuze ibitekerezo byiza ku mibereho", "Yavuze uburyo ibintu byagenze", "Yavuze byinshi", 
-            "Yaravuze amahoro", "Yaratangaye kubona ibyo yavuze", "Yavuze ibitekerezo bihamye ku kazi", 
-            "Yaravuze ko byari bigoye", "Yavuze ko ibyo yabonye byari bitunguranye", "Yavuze muri byose", 
+            "yavuze amahoro", "Yaratangaye kubona ibyo yavuze", "Yavuze ibitekerezo bihamye ku kazi", 
+            "yavuze ko byari bigoye", "Yavuze ko ibyo yabonye byari bitunguranye", "Yavuze muri byose", 
             "Yaratangaje abantu bose", "Yavuze amagambo y'icyizere", "Yavuze ibintu birimo kugenda neza", 
             "Yavuze ngo ibintu byose bihindutse", "Yaratunguwe no kubona ibyo yavuze", "Yavuze ibitekerezo byahinduye byose", 
-            "Yaravuze ibintu byafashije abandi", "Yavuze ko abona amahoro", "Yaravuze impamvu yo gukora", 
-            "Yavuze amagambo y'inyigisho", "Yashatse gukora ibintu byiza", "Yaravuze iby'ingenzi ku mibereho", 
-            "Yatangiye kubona umwanzuro", "Yavuze mu buryo bwo kugaragaza ubwiza", "Yaravuze mu buryo busobanutse", 
+            "yavuze ibintu byafashije abandi", "Yavuze ko abona amahoro", "yavuze impamvu yo gukora", 
+            "Yavuze amagambo y'inyigisho", "Yashatse gukora ibintu byiza", "yavuze iby'ingenzi ku mibereho", 
+            "Yatangiye kubona umwanzuro", "Yavuze mu buryo bwo kugaragaza ubwiza", "yavuze mu buryo busobanutse", 
             "Yavuze iby'ukuri", "Yashatse kumenya uko byagenda", "Yavuze ko byari bitunguranye", 
-            "Yavuze ko ibyo yavuze bibaye impamo", "Yavuze neza ko", "Yaravuze icyo yatekereje", 
+            "Yavuze ko ibyo yavuze bibaye impamo", "Yavuze neza ko", "yavuze icyo yatekereje", 
             "Yavuze mu buryo bwo kuganira", "Yavuze impamvu yo kwihangana", "Yarasubije ibibazo", 
             "Yavuze n'ijwi ritandukanye", "Yarasubije mu buryo butunguranye", "Yavuze ku byerekeye abantu", 
-            "Yaravuze ngo ibintu byose bizagenda neza", "Yavuze ko ibikorwa byoroshye", 
-            "Yavuze ko byose bishoboka", "Yaratangiye kuganira kubyo yabonye", "Yaravuze ko byari byiza", 
-            "Yavuze ku bikorwa bya buri munsi", "Yaratangiye kubaza byinshi", "Yavuze amagambo yuzuyemo ikinyabupfura", 
-            "Yaravuze ko ari ibibazo bikomeye", "Yaravuze ko ibintu byose byabaye byiza", 
+            "yavuze ngo ibintu byose bizagenda neza", "Yavuze ko ibikorwa byoroshye", 
+            "Yavuze ko byose bishoboka", "Yaratangiye kuganira kubyo yabonye", "yavuze ko byari byiza", 
+            "Yavuze ku bikorwa bya buri munsi", "Yatangiye kubaza byinshi", "Yavuze amagambo yuzuyemo ikinyabupfura", 
+            "Yavuze ko ari ibibazo bikomeye", "Yavuze ko ibintu byose byabaye byiza", 
             "Yavuze ko abona ubuzima bwiza", "Yavuze ko ibintu byose biri ku murongo", "Yavuze ko byari byoroshye", 
-            "Yaravuze ibintu byerekana ko byagenze neza", "Yaravuze ibyo yavuze akiri kumwe", "Yavuze ibyo ari bwo yatekereje", 
+            "Yavuze ibintu byerekana ko byagenze neza", "Yavuze ibyo yavuze akiri kumwe", "Yavuze ibyo ari bwo yatekereje", 
             "Yavuze ibintu byerekana ukuri", "Yavuze amagambo yo kwihangana", "Yavuze ibyo avuga muri rusange", 
             "Yavuze ko byose byagenze neza", "Yavuze ko byinshi bihindutse", "Yaratangiye gutekereza cyane", 
-            "Yaravuze ko byose byakozwe", "Yaratangajwe n'ukuri", "Yavuze ibitekerezo bitangaje"
+            "Yavuze ko byose byakozwe", "Yatangajwe n'ukuri", "Yavuze ibitekerezo bitangaje"
         ],
         
         // Cultural elements
@@ -651,7 +651,7 @@ function TextGenerator(prompt, episodicOptions = null) {
             "gukora ibikorwa by'ingirakamaro", "gushishikariza abandi gufata ibyemezo byiza", "kwita ku bufatanye", 
             "gushyigikira iterambere ry'umuco", "gufasha abantu mu bibazo", "gukora mu buryo bwiza", 
             "gufasha abantu kugera ku ntego zabo", "gushyigikira umuryango wose", "gukora ibikorwa by'ingenzi", 
-            "gushyira imbere ibikorwa byiza"
+            "gushyira imbere ibikorwa byiza", "kurwana", "kurwanya", "kwica", "kwicwa","gukiza", "gukizwa", "gushaka"
         ],
         
         // Proverbs and wisdom
@@ -663,7 +663,7 @@ function TextGenerator(prompt, episodicOptions = null) {
             "Inshuti nyakuri iboneka mu bihe bikomeye", 
             "Ntawuhinga akavuna umusaruro ku munsi umwe", 
             "Igiti kigororwa kikiri gito", 
-            "Impamvu zigira nyirazo"
+            "Impamvu zigira nyirazo",
         "Inzira ntibwira umugenzi",
   "Uwanze gutera intimba ntazagira amateka",
   "Akebo kajya iwa mugarura kabanzayo akandi",
@@ -715,7 +715,7 @@ function TextGenerator(prompt, episodicOptions = null) {
         conflict: [
             "ikibazo", "amakimbirane", "urugamba", "intambara", "igihangange", 
             "ubushyamirane", "amahane", "ubwumvikane", "umwanzuro", "ubwiyunge", 
-            "kubabarira", "agakiza", "igisubizo", "amahoro", "ubumwe", "ukuri"
+            "kubabarira", "agakiza", "igisubizo", "amahoro", "ubumwe", "ukuri",
             "ikibazo", "amakimbirane", "urugamba", "intambara", "igihangange", 
               "ubushyamirane", "amahane", "ubwumvikane", "umwanzuro", "ubwiyunge", 
               "kubabarira", "agakiza", "igisubizo", "amahoro", "ubumwe", "ukuri",
@@ -783,15 +783,13 @@ function TextGenerator(prompt, episodicOptions = null) {
             "gufungisha", "guhorana icyizere", "kugongana", "kwibwiriza", "gushishikariza",
             "kwicuza", "gutsindwa", "kwitondera", "kwiyemeza", "kwirinda",
             "kwizirika", "kwiheba", "kwigaragambya", "guca ukubiri", "kurota",
-            "gutekinika", "gutsimbarara", "guhanga", "kwihagararaho", "gutambuka"
+            "gutekinika", "gutsimbarara", "guhanga", "kwihagararaho", "gutambuka", "gukunda", "gukundwa", "kwiba","kwibwa", "kwica", "kwicwa", "gushimita", "gushimutwa", "gucuruzwa", "gucuruza"
         ],
         
         // Story elements
-        storyElements: [
-            "inkuru", "umutwe w'inkuru", "umwandiko", "igitekerezo", "ibyabaye", 
-            "ubuzima", "amateka", "umusaruro", "ubushakashatsi", "urugendo", 
-            "ishusho", "intego", "ikinamico", "agakuru", "ibitangaza", "ubuzima",
-            "ubuzima", "amateka", "umusaruro", "ubushakashatsi", "urugendo",
+         storyElements: [
+  "inkuru", "umutwe w'inkuru", "umwandiko", "igitekerezo", "ibyabaye",
+  "ubuzima", "amateka", "umusaruro", "ubushakashatsi", "urugendo",
   "ishusho", "intego", "ikinamico", "agakuru", "ibitangaza", "abakinnyi",
   "aho bikorerwa", "ikibazo", "igisubizo", "ikiganiro", "imitekerereze",
   "ikigeragezo", "impinduka", "inyigisho", "umudiho", "ubwiru", "ubwoba",
@@ -813,28 +811,27 @@ function TextGenerator(prompt, episodicOptions = null) {
   "intambwe", "kwiyemeza", "gutsindwa", "gutsinda", "umuyoboro", "uruziga rw’inkuru",
   "ubutwari", "kwiheba", "gusaba imbabazi", "kwihorera", "inyota y'ubutunzi",
   "inda nini", "icyaha cy’ubusambanyi", "ubusumbane", "akarengane", "kwisubiraho",
-  "inyigisho zitazibagirana", "ubusizi", "ubuhamya", "urugamba", "intsinzi",
-  "ikigeragezo cyanyuma", "umutima w’inkuru", "icyemezo cy’ubuzima", "kwigira",
-  "kwigishwa", "gutozwa", "kureka", "gufata icyemezo gikomeye", "gukunda no kwanga",
-  "indoto", "icyifuzo", "ibanga", "amaherezo adasobanutse", "impamvu z'ibikorwa",
-  "abavandimwe", "urugo", "ababyeyi", "abana", "umuryango", "imyemerere",
-  "gucika intege", "gutsimbarara", "gukomera ku ndangagaciro", "ubugambanyi",
-  "gukemura amakimbirane", "ubumwe", "guca bugufi", "gutabarwa", "inkomoko y’intwari",
-  "ibyiringiro", "akarengane gakabije", "kugambirira", "ubusabane", "ibyo umuntu yibuka",
-  "ibyahise", "ibizaza", "guhindura isi", "ubumuga", "inkeke", "urukundo rutemewe",
-  "urukundo rwibujijwe", "umubano wihishe", "igitinyiro", "igikomerezwa",
-  "imihigo", "indahiro", "ibikomere byo mu mutima", "kwikiza", "kugirira abandi neza",
-  "kwiha agaciro", "kwitangira abandi", "gushidikanya", "kwizera", "gutekereza cyane",
-  "kwihagararaho", "kwirengagiza", "gutenguhwa", "gutungurwa", "guhisha ukuri",
-  "gukanguka", "gukurwa ku izima", "kwibohora", "kwigenga", "kwakira",
-  "gukunda igihugu", "gukunda abantu", "kwirwanaho", "uburwayi", "ubukene",
-  "ubuhunzi", "kwamburwa", "gucika intege", "gufungurwa", "gufungwa", 
-  "gupfa", "kubaho", "kwiruka", "guhunga", "kubaka", "gusenya", "kurwana", 
-  "kwishima", "kubabara", "kugira impuhwe", "kwicisha bugufi", "kwanga ububi",
-  "kumva abandi", "kumva umutima wawe", "ibisobanuro", "ubuzima bw’imbere",
-  "inkomoko y’icyizere", "ikigereranyo", "icyifuzo cyihishe", "uruhare rwa buri wese"
-            
-        ],
+  "inyigisho zitazibagirana", "ubusizi", "ubuhamya", "intsinzi", "ikigeragezo cyanyuma",
+  "umutima w’inkuru", "icyemezo cy’ubuzima", "kwigira", "kwigishwa", "gutozwa",
+  "kureka", "gufata icyemezo gikomeye", "gukunda no kwanga", "indoto", "icyifuzo",
+  "ibanga", "amaherezo adasobanutse", "impamvu z'ibikorwa", "abavandimwe", "urugo",
+  "ababyeyi", "abana", "umuryango", "imyemerere", "gucika intege", "gutsimbarara",
+  "gukomera ku ndangagaciro", "ubugambanyi", "gukemura amakimbirane", "ubumwe",
+  "guca bugufi", "gutabarwa", "inkomoko y’intwari", "ibyiringiro", "akarengane gakabije",
+  "kugambirira", "ubusabane", "ibyo umuntu yibuka", "ibyahise", "ibizaza",
+  "guhindura isi", "ubumuga", "inkeke", "urukundo rutemewe", "urukundo rwibujijwe",
+  "umubano wihishe", "igitinyiro", "igikomerezwa", "imihigo", "indahiro",
+  "ibikomere byo mu mutima", "kwikiza", "kugirira abandi neza", "kwiha agaciro",
+  "kwitangira abandi", "gushidikanya", "kwizera", "gutekereza cyane", "kwihagararaho",
+  "kwirengagiza", "gutenguhwa", "gutungurwa", "guhisha ukuri", "gukanguka",
+  "gukurwa ku izima", "kwibohora", "kwigenga", "kwakira", "gukunda igihugu",
+  "gukunda abantu", "kwirwanaho", "uburwayi", "ubukene", "ubuhunzi", "kwamburwa",
+  "gufungurwa", "gufungwa", "gupfa", "kubaho", "kwiruka", "guhunga", "kubaka",
+  "gusenya", "kurwana", "kwishima", "kubabara", "kugira impuhwe", "kwicisha bugufi",
+  "kwanga ububi", "kumva abandi", "kumva umutima wawe", "ibisobanuro",
+  "ubuzima bw’imbere", "inkomoko y’icyizere", "ikigereranyo", "icyifuzo cyihishe",
+  "uruhare rwa buri wese", "ubwami", "ubutasi", "uburozi", "ubwihebe", "ubuhemu"
+],
         
         // Common adjectives
     adjectives: [
@@ -864,132 +861,342 @@ function TextGenerator(prompt, episodicOptions = null) {
 
     // Story structure templates based on different genres/themes
     const storyTemplates = {
-        urukundo: {
-            theme: "urukundo",
-            plotElements: [
-                "guhura ku buryo butunguranye", 
-                "kwifatanya", 
-                "kubana n'ibibazo", 
-                "gutandukana by'agateganyo", 
-                "kwiyunga", 
-                "kubabarirana",
-                "gushyingiranwa"
-            ],
-            settings: [
-                "mu mujyi wa Kigali", 
-                "mu cyaro cya Rwanda", 
-                "mu ishuri ryisumbuye", 
-                "mu kigo cy'isomero", 
-                "mu busitani bwiza",
-                "ku nkombe z'ikiyaga Kivu"
-            ],
-            challenges: [
-                "guhatana n'imiryango itumvikana", 
-                "inzitizi z'amafaranga", 
-                "kubura ituze ryo mu mutima", 
-                "gushidikanya ku rukundo", 
-                "amadini atandukanye",
-                "kwimuka gushaka akazi"
-            ]
-        },
-        ubuhanuzi: {
-            theme: "ubuhanuzi",
-            plotElements: [
-                "indoto yuzuye ubusobanuro", 
-                "guhabwa impano idasanzwe", 
-                "igihe kibi kizaza", 
-                "kuburira abantu", 
-                "kugerageza guhagarika ibyago",
-                "ishyano riteye ubwoba"
-            ],
-            settings: [
-                "mu gihugu kirimo intambara", 
-                "mu mudugudu muto w'abaturage", 
-                "ahateye amabinga", 
-                "mu gihe cy'amakuba", 
-                "mu gitondo cy'umwijima"
-            ],
-            challenges: [
-                "kutizera by'abaturage", 
-                "igihe kidahagije", 
-                "ubushobozi buke", 
-                "guhangana n'inzego z'ubutegetsi", 
-                "kuzira ubwoba"
-            ]
-        },
-        amateka: {
-            theme: "amateka",
-            plotElements: [
-                "kuzungurwa umurage w'ingenzi", 
-                "gushakisha ukuri", 
-                "guhura n'ibanga ry'umuryango", 
-                "kuvumbura igiciro cy'ejo hashize", 
-                "kwiyunga n'amateka"
-            ],
-            settings: [
-                "mu Rwanda rwa mbere y'ubukoloni", 
-                "mu gihe cy'intambara", 
-                "mu Rwanda rw'ubu", 
-                "mu rugo rw'umwami", 
-                "mu midugudu yo mu cyaro"
-            ],
-            challenges: [
-                "kwibagirwa k'amateka", 
-                "gusoreza ibyo ushaka", 
-                "kurwanya ibinyoma", 
-                "kwigisha amateka arambuye", 
-                "kubungabunga umuco nyarwanda"
-            ]
-        },
-        ubutwari: {
-            theme: "ubutwari",
-            plotElements: [
-                "guhangana n'imbaraga zikomeye", 
-                "kurokora abandi mu bibazo", 
-                "ubushyamirane bwo mu mutima", 
-                "kwihangana no kwigumya", 
-                "kubyukana ubutwari"
-            ],
-            settings: [
-                "mu ishyamba rya Nyungwe", 
-                "mu ntambara yo kuvuga ukuri", 
-                "mu rugendo rurerure", 
-                "mu urugendo rw'imisozi", 
-                "mu ituze ry'ubuzima"
-            ],
-            challenges: [
-                "kubura ibyiringiro", 
-                "kuziga n'umunaniro", 
-                "gutakaza inshuti", 
-                "kurwana n'igicucu cy'umwanzi", 
-                "kwigarurira ubwoba bwo mu nda"
-            ]
-        },
-        ubuzima: {
-            theme: "ubuzima",
-            plotElements: [
-                "imyaka yo gukura", 
-                "kugerageza kugera ku nzozi", 
-                "ubushuti budasanzwe", 
-                "kubaka urugo", 
-                "guhinduka mu buzima"
-            ],
-            settings: [
-                "mu ishyamba rya Nyungwe", 
-                "mu mudugudu muto", 
-                "mu ishuri ryiza", 
-                "mu rugo rurangwamo amahoro", 
-                "mu kigo cy'ubucuruzi"
-            ],
-            challenges: [
-                "ubukene bukabije", 
-                "indwara idasanzwe", 
-                "guhomba ibyo wageraho", 
-                "gusigara wenyine", 
-                "gusama agatege"
-            ]
-        }
-    };
+  urukundo: {
+    theme: "urukundo",
+    plotElements: [
+      "guhura ku buryo butunguranye",
+      "kwiyumvanamo", "kugambanirana",
+      "gutandukana by'agateganyo",
+      "kubabarirana",
+      "guhangana n’imbogamizi",
+      "gutsinda ibigeragezo", 
+      "gushinga urugo",
+      "kubyara no gutera imbere"
+    ],
+    settings: [
+      "mu mujyi wa Kigali",
+      "ku nkombe z’umugezi",
+      "mu ishuri ryisumbuye",
+      "muri kaminuza", 
+      "mu imusoko",
+      "munzu",
+      "kugitanda",
+      "mu rusengero",
+      "mu biro bikomeye",
+      "kwa muganga",
+      "muri salon",
+      "mu mazi",
+      "muri sale yakodeshejwe ngo ubukwe bu beremo"
+    ],
+    characters: [
+  "Eric – umuhungu w’umukene w’intwari",
+  "Aline – umukobwa w’umukire ufite umutima mwiza",
+  "Sandro – inshuti y’akadasohoka ya Eric",
+  "Maman Vero – umubyeyi utabishyigikiye",
+],
+    developmentArc: [
+      "guhura",
+      "gukundana",
+      "guhura n’imbogamizi",
+      "guhitamo",
+      "gutsinda ibigeragezo",
+      "kubana"
+    ],
+    challenges: [
+      "amadini atandukanye",
+      "guhindurwa ku bushake bw’abandi",
+      "ubukene",
+      "guhangana n’ishyari ry’abandi"
+    ]
+  },
+
+  ubuzima: {
+    theme: "ubuzima",
+    plotElements: [
+      "kurwara",
+      "guhangana n'indwara",
+      "ubufasha bwa muganga",
+      "kubyara",
+      "gukira",
+      "kwiga kubaho neza"
+    ],
+    settings: [
+      "kwa muganga",
+      "mu bitaro bikuru",
+      "mu buzima bwo mu cyaro",
+      "mu rugo rwirwemo n’indwara",
+      "mu ishuri ry’ubuvuzi"
+    ],
+    characters: [
+      "umurwayi",
+      "muganga mwiza",
+      "umufasha w’indahemuka",
+      "umuryango"
+    ],
+    developmentArc: [
+      "gukubita ahareba inzega",
+      "kwiyakira",
+      "kurwana ku buzima",
+      "gutsinda indwara",
+      "guhindura imikorere",
+      "gusangiza abandi ubuzima bushya"
+    ],
+    challenges: [
+      "ubukene bwo kwivuza",
+      "kubura ubufasha",
+      "guhura n’indwara zidakira",
+      "guterwa icyizere n’abaganga b’abatekamutwe"
+    ]
+  },
+
+  ubutasi: {
+    theme: "ubutasi",
+    plotElements: [
+      "guhabwa ubutumwa bw’ibanga",
+      "kwinjira ahihishe",
+      "gukora iperereza",
+      "kugaragaza ukuri",
+      "guhisha ibimenyetso",
+      "guhindura ikiranga"
+    ],
+    settings: [
+      "mu biro by’ubutasi",
+      "mu gihugu cy’amahanga",
+      "mu cyumba cy'ibanga",
+      "mu kigo cy’umutekano",
+      "mu rugo rwirimo ibanga"
+    ],
+    characters: [
+      "umukozi w’ubutasi",
+      "umuyobozi w’ibanga",
+      "umwanzi wihishe",
+      "inshuti itamenya ko w’undi ari intasi"
+    ],
+    developmentArc: [
+      "guhabwa ubutumwa",
+      "gukora iperereza",
+      "kugaragaza ukuri",
+      "gutahura umugambi",
+      "kugarura amahoro"
+    ],
+    challenges: [
+      "guhishwa ukuri n’inzego zikomeye",
+      "kugirirwa amakenga n’abaturage",
+      "gukora ikosa rimwe rikomeye",
+      "kwishyiraho ikinyoma kinini"
+    ]
+  },
+
+  urugamba: {
+    theme: "urugamba",
+    plotElements: [
+      "kwinjira mu gisirikare",
+      "gukora imyitozo",
+      "kurwana ku gihugu",
+      "gutakaza inshuti",
+      "kugera ku ntsinzi"
+    ],
+    settings: [
+      "mu rugamba",
+      "mu kigo cya gisirikare",
+      "mu gace k’intambara",
+      "mu nzira y’ibikorwa bya gisirikare"
+    ],
+    characters: [
+      "umusirikare mushya",
+      "umugaba mukuru",
+      "umwanzi",
+      "umuryango usigaye"
+    ],
+    developmentArc: [
+      "kwinjira mu rugamba",
+      "guhangara ibikomeye",
+      "kugira ibihombo",
+      "gutsinda urugamba",
+      "kugaruka mu mahoro"
+    ],
+    challenges: [
+      "gutakaza ibirindiro",
+      "guhura n’ibikomere",
+      "kumva ko utabaho ejo",
+      "gufata icyemezo gikomeye"
+    ]
+  },
+
+  ubwami: {
+    theme: "ubwami",
+    plotElements: [
+      "gukomoka ku bwami",
+      "kuba igikomangoma",
+      "guhatanira ingoma",
+      "kubaka ubwami bushya"
+    ],
+    settings: [
+      "mu nzu y’ingoma",
+      "mu gace karinzwe",
+      "mu nama y’abajyanama",
+      "mu ishyamba ry’ibanga"
+    ],
+    characters: [
+      "igikomangoma",
+      "umwami w’imyaka myinshi",
+      "umwanzi ushaka kwima",
+      "umuyobozi w’ingabo"
+    ],
+    developmentArc: [
+      "gutangira urugendo",
+      "kwimenyekanisha",
+      "guhangana n'abashaka kwima",
+      "kwima ingoma",
+      "kuyobora mu mahoro"
+    ],
+    challenges: [
+      "ubugambanyi bwo mu nzu",
+      "kudahabwa icyizere",
+      "kurwanywa n’abanyamabanga",
+      "intambara y’ubwami"
+    ]
+  },
+
+  ubugome: {
+    theme: "ubugome",
+    plotElements: [
+      "gukora icyaha gikomeye",
+      "kwanga imbabazi",
+      "kugirira abandi nabi",
+      "kubona akaga"
+    ],
+    settings: [
+      "mu gasantere k’icumbi",
+      "mu murwa w’icyaha",
+      "mu biro by’ubucamanza",
+      "mu ishyamba rihishwamo amarorerwa"
+    ],
+    characters: [
+      "umugome mukuru",
+      "inshuti yamuhindutse",
+      "umucamanza",
+      "umucikacumu"
+    ],
+    developmentArc: [
+      "gutangira icyaha",
+      "kugambirira ubugome",
+      "kurwanya abamurwanya",
+      "kwisanga wenyine",
+      "guhura n'ingaruka"
+    ],
+    challenges: [
+      "kurwana n’abashaka kumuhagarika",
+      "guhinduka cyangwa kuguma ku kibi",
+      "kugirwa imbata y’ibyo yakoze"
+    ]
+  },
+
+  ubugambanyi: {
+    theme: "ubugambanyi",
+    plotElements: [
+      "kugambanira inshuti",
+      "gukorana n’abanzi",
+      "gutera inkunga umugambi mubi",
+      "guhinduka intwari nyuma yo kwicuza"
+    ],
+    settings: [
+      "mu biro by’inshuti zizewe",
+      "mu gace karimo ibanga",
+      "mu nama y’ubugambanyi"
+    ],
+    characters: [
+      "umugambanyi",
+      "uwagambaniwe",
+      "umuyobozi utunguwe",
+      "umucunguzi"
+    ],
+    developmentArc: [
+      "gukorana n’abanzi",
+      "guhisha ukuri",
+      "kwicuza",
+      "kwishyira ahagaragara",
+      "kugirwa imbabazi cyangwa guhanwa"
+    ],
+    challenges: [
+      "kudahishura ubwicanyi",
+      "gutinya ingaruka",
+      "gukora ku mutima uwo wagambaniye"
+    ]
+  },
+
+  ubuvuzi: {
+    theme: "ubuvuzi",
+    plotElements: [
+      "gusuzuma indwara",
+      "kuvuza umurwayi",
+      "gushaka umuti",
+      "gukiza abantu benshi"
+    ],
+    settings: [
+      "mu bitaro",
+      "mu gace kugarijwe n’icyorezo",
+      "mu laboratwari",
+      "mu gikorwa cyo gukingira"
+    ],
+    characters: [
+      "muganga",
+      "umurwayi",
+      "umushakashatsi",
+      "umuforomokazi"
+    ],
+    developmentArc: [
+      "kumenya ikibazo",
+      "gukora ubushakashatsi",
+      "gusanga igisubizo",
+      "gutabara imbaga",
+      "kubaka ubushobozi buhamye"
+    ],
+    challenges: [
+      "kubura ibikoresho",
+      "gutinya kwandura",
+      "gukora ibizamini by'ibanze",
+      "guhura n’uburwayi budasanzwe"
+    ]
+  },
+
+  iyobokamana: {
+    theme: "iyobokamana",
+    plotElements: [
+      "kwakira ubutumwa",
+      "kwigisha abantu",
+      "gukiza imitima",
+      "gutsinda ikigeragezo cy’ukwemera"
+    ],
+    settings: [
+      "mu rusengero",
+      "mu butayu",
+      "mu mwiherero w’amasengesho",
+      "mu iseminari"
+    ],
+    characters: [
+      "umuhanuzi",
+      "umukozi w’Imana",
+      "abemera",
+      "abashidikanya"
+    ],
+    developmentArc: [
+      "guhabwa umuhamagaro",
+      "guhura n’akarengane",
+      "gutsinda ibigeragezo",
+      "guhindura abantu",
+      "gusiga umurage"
+    ],
+    challenges: [
+      "guharabikwa",
+      "kugeragezwa n’amakosa y’abantu",
+      "guhindurwa nk’ikigusha",
+      "kwigumya mu by’ukuri"
+    ]
+  }
+};
+        
+  
 
     // Helper functions for story generation
     
@@ -1041,12 +1248,43 @@ function TextGenerator(prompt, episodicOptions = null) {
         
         // Check related terms
         const themeMapping = {
-            "urukundo": ["urukundo", "gukunda", "mushiki", "mushikiwe", "inshuti", "kukundana", "abakunzi", "umugabo", "umugore"],
-            "ubuhanuzi": ["ubuhanuzi", "kwibwira", "guhanura", "indoto", "kurota", "igipimo", "kuyaguruka", "ubupfumu", "gusobanukirwa"],
-            "amateka": ["amateka", "umwami", "ingoma", "ejo hashize", "kera", "ubwami", "abanyarwanda", "inganzo", "umuco"],
-            "ubutwari": ["ubutwari", "intwari", "intambara", "kurwana", "gutsinda", "kumenyekana", "gushyira imbere", "gutwara neza"],
-            "ubuzima": ["ubuzima", "kubaho", "kwiga", "gukora", "urugendo", "gukura", "kwakira", "umugabane", "imyaka"]
-        };
+  urukundo: [
+    "urukundo", "gukunda", "mushiki", "mushikiwe", "inshuti",
+    "kukundana", "abakunzi", "umugabo", "umugore", "amarangamutima", "kubabarirana"
+  ],
+  ubuzima: [
+    "ubuzima", "kubaho", "kwiga", "gukora", "urugendo",
+    "gukura", "kwakira", "imyaka", "ingorane", "imibereho"
+  ],
+  ubutasi: [
+    "ubutasi", "iperereza", "waperi", "umunyabyaha",
+    "guhisha", "inzego z'umutekano", "gutega amatwi", "ibanga", "impapuro mpimbano"
+  ],
+  urugamba: [
+    "intambara", "urugamba", "kurwana", "abasirikare",
+    "amahoro", "gutsinda", "intwaro", "abacunguzi", "gucungura"
+  ],
+  ubwami: [
+    "ubwami", "umwami", "umwamikazi", "urugori", "ingoma",
+    "icyubahiro", "umujyanama", "abiru", "icyemezo cy'ubwami"
+  ],
+  ubugome: [
+    "ubugome", "kuriganya", "ubugizi bwa nabi", "kubabaza",
+    "guca inyuma", "gukina ku mitsi", "gutekinika", "amahugu"
+  ],
+  ubugambanyi: [
+    "ubugambanyi", "kugambanira", "uburiganya", "uburyarya",
+    "ibanga", "kugambanira igihugu", "gucura umugambi", "kwica amayeri"
+  ],
+  ubuvuzi: [
+    "ubuvuzi", "umuganga", "ibitaro", "indwara", "imiti",
+    "gukingira", "kwivuza", "umurwayi", "ubuzima bwiza", "ikigo nderabuzima"
+  ],
+  iyobokamana: [
+    "iyobokamana", "imana", "gusenga", "ivanjiri", "pasiteri",
+    "kiliziya", "moshe", "korowani", "bibiliya", "amasengesho", "umwuka wera"
+  ]
+};
         
         for (const theme in themeMapping) {
             for (const term of themeMapping[theme]) {
@@ -1129,11 +1367,11 @@ function TextGenerator(prompt, episodicOptions = null) {
         
         // Generate episode-specific title
         const episodeTitleTemplates = [
-            `Igice cya ${episodicOptions.episodeNumber}: ${mainCharacter.name} ${conflict}`,
-            `Igice cya ${episodicOptions.episodeNumber}: ${setting.place}`,
-            `Igice cya ${episodicOptions.episodeNumber}: ${getRandomItem(storyTheme.plotElements)}`,
-            `Igice cya ${episodicOptions.episodeNumber}: Urugendo rukomeza...`
-        ];
+  `Igice cya ${episodicOptions.episodeNumber}: ${mainCharacter.name} n'urugamba rwo guhindura amateka`,
+  `Igice cya ${episodicOptions.episodeNumber}: ${setting.place} – Aho ibanga rihishuwe`,
+  `Igice cya ${episodicOptions.episodeNumber}: ${getRandomItem(storyTheme.plotElements)} bizahindura byose!`,
+  `Igice cya ${episodicOptions.episodeNumber}: Inzira y'ubwiyunge, birashoboka!....`
+];
         
         if (episodicOptions.episodeNumber === episodicOptions.totalEpisodes) {
             episodeTitleTemplates.push(`Igice cya nyuma: Umwanzuro`);
@@ -1186,62 +1424,66 @@ function TextGenerator(prompt, episodicOptions = null) {
     
     // Introduction section sentence templates
     const introductionTemplates = [
-        `${setting.time}, ${mainCharacter.name} yari ${setting.place}`,
-        `${mainCharacter.name} yari umuntu {descriptions}`,
-        `${setting.weather} ubwo ${mainCharacter.name} yatangiraga umunsi we`,
-        `Mu buzima bwa ${mainCharacter.name}, byose byari {adjectives}`,
-        `${mainCharacter.name} yahoranye {emotions} mu mutima we`,
-        `{timeExpressions}, abantu bo ${setting.place} bamenye ${mainCharacter.name}`,
-        `Igihe ${mainCharacter.name} yari afite imyaka ${mainCharacter.age}, yabonye ${secondaryCharacter.name}`,
-        `${secondaryCharacter.name} yari {descriptions} cyane`,
-        `Byari ibintu {adjectives} kuri ${mainCharacter.name}`,
-        `"${getRandomItem(kinyarwandaDict.proverbs)}" ni amagambo ajya aradikiriza umutima wa ${mainCharacter.name}`
-    ];
+  `Dutangiranye n'utuganirira ku ${setting.time}, ubwo ${mainCharacter.name} yari ${setting.place}`,
+  `Dutangiranye n'utuganirira, ${mainCharacter.name} yari umuntu {descriptions}`,
+  `Dutangiranye n'utuganirira, ${setting.weather} ubwo ${mainCharacter.name} yatangiraga umunsi we`,
+  `Mu buzima bwa ${mainCharacter.name}, byose byari {adjectives}, dutangiranye n'utuganirira`,
+  `${mainCharacter.name} yahoranye {emotions} mu mutima we, dutangiranye n'utuganirira`,
+  `Dutangiranye n'utuganirira, {timeExpressions}, abantu bo ${setting.place} bamenye ${mainCharacter.name}`,
+  `Igihe ${mainCharacter.name} yari afite imyaka ${mainCharacter.age}, yabonye ${secondaryCharacter.name}, dutangiranye n'utuganirira`,
+  `${secondaryCharacter.name} yari {descriptions} cyane, dutangiranye n'utuganirira`,
+  `Byari ibintu {adjectives} kuri ${mainCharacter.name}, dutangiranye n'utuganirira`,
+  `"${getRandomItem(kinyarwandaDict.proverbs)}" ni amagambo ajya w'abanyarwanda. ${mainCharacter.name}, dutangiranye n'utuganirira`
+];
     
     // Rising action section sentence templates
     const risingActionTemplates = [
-        `Ariko umunsi umwe, ${conflict} cyatangiye guhangayikisha ${mainCharacter.name}`,
-        `${mainCharacter.name} yari yahuye na {conflict}`,
-        `${secondaryCharacter.name} {conversations}: "${getRandomItem(kinyarwandaDict.proverbs)}"`,
-        `${mainCharacter.name} yariyemeje gushaka igisubizo kuri {conflict}`,
-        `${setting.place} hatangiye kuba {adjectives}`,
-        `Abantu batangiye kuvuga ko ${mainCharacter.name} atazashobora gutsinda iki kibazo`,
-        `${mainCharacter.name} yumvaga {emotions} bikomeye`,
-        `${secondaryCharacter.name} yagerageje gufasha, ariko byari {adjectives}`,
-        `"Nzakomeza kugeza igihe nzatsindira," ${mainCharacter.name} {conversations}`,
-        `Ibyiringiro bya ${mainCharacter.name} byatangiye kugabanuka`,
-        `Nta wamenya impamvu ${conflict} cyaje gitunguranye gutyo`
-    ];
+  `Ariko umunsi umwe, ${conflict} cyatangiye guhangayikisha ${mainCharacter.name}, ibintu bihinduka bikomeye`,
+  `${mainCharacter.name} yari yahuye na {conflict}, bikaba byaratangiye kumubera ibibazo bikomeye`,
+  `${secondaryCharacter.name} {conversations}: "${getRandomItem(kinyarwandaDict.proverbs)}", birasa nk'uko ari umugisha cyangwa ibigeragezo bya ${mainCharacter.name}`,
+  `${mainCharacter.name} yariyemeje gushaka igisubizo kuri {conflict}, akiri mu rugamba rukomeye`,
+  `${setting.place} hatangiye kuba {adjectives}, ibintu bihinduka cyane`,
+  `Abantu batangiye kuvuga ko ${mainCharacter.name} atazashobora gutsinda iki kibazo, bakamwotsa igitutu`,
+  `${mainCharacter.name} yumvaga {emotions} bikomeye, akubiswe n'ihurizo rya mbere`,
+  `${secondaryCharacter.name} yagerageje gufasha, ariko byari {adjectives}, ntiyari afite ibisubizo byoroshye`,
+  `"Nzakomeza kugeza igihe nzatsindira," ${mainCharacter.name} {conversations}, ariko ntiyari azi ko hari izindi nzitizi zibategereje`,
+  `Ibyiringiro bya ${mainCharacter.name} byatangiye kugabanuka, akumva ko ari hafi gutakaza urugendo rwe`,
+  `Nta wamenya impamvu ${conflict} cyaje gitunguranye gutyo, ariko ibyo byatumye ${mainCharacter.name} yinjira mu isi y'ibibazo byinshi`
+];
     
     // Climax and development section sentence templates
     const climaxTemplates = [
-        `${mainCharacter.name} yageze aho asanga nta kundi bishoboka`,
-        `${mainCharacter.name} {conversations}: "Uku ni ko bizagenda koko?"`,
-        `${secondaryCharacter.name} yahise yibuka {cultural}`,
-        `Byari ibihe bikomeye kuri ${mainCharacter.name}, ariko yakomeje kugira {emotions}`,
-        `${mainCharacter.name} yibuka ibyavuzwe na sekuru: "${getRandomItem(kinyarwandaDict.proverbs)}"`,
-        `Umutima wa ${mainCharacter.name} wujujwe {emotions}`,
-        `${secondaryCharacter.name} ntiyashoboraga kwemera icyo ${mainCharacter.name} yashoboraga gukora`,
-        `Igihe cyose ${mainCharacter.name} yatekereje kuri {conflict}, yumvaga ubwoba`,
-        `"${getRandomItem(kinyarwandaDict.proverbs)}," ${secondaryCharacter.name} {conversations}`,
-        `${mainCharacter.name} yari afite igitekerezo gishya`,
-        `Uwo munsi, ${mainCharacter.name} yahisemo {verbs} mu buryo butandukanye`
-    ];
+  `${mainCharacter.name} yageze aho asanga nta kundi bishoboka, igihe cyari kigeze ngo afate icyemezo gikomeye`,
+  `${mainCharacter.name} yihanaguye amarira aravuga {conversations}: "Uku ni ko bizagenda koko?"`,
+  `${secondaryCharacter.name} yahise yibuka {cultural}, bimutera ubwoba n’icyizere icyarimwe`,
+  `Byari ibihe bikomeye kuri ${mainCharacter.name}, ariko yakomeje kugira {emotions}, yanga gucika intege`,
+  `${mainCharacter.name} yibuka ibyavuzwe na sekuru: "${getRandomItem(kinyarwandaDict.proverbs)}", ni bwo yahisemo guhindura byose`,
+  `Umutima wa ${mainCharacter.name} wujujwe {emotions}, agira icyemezo cyagombaga guhindura ubuzima bwe`,
+  `${secondaryCharacter.name} ntiyashoboraga kwemera icyo ${mainCharacter.name} yashoboraga gukora, ariko ntiyari afite amahitamo`,
+  `Igihe cyose ${mainCharacter.name} yatekerezaga kuri {conflict}, yumvaga ubwoba bumutaha nk’ikirura cyegera intama`,
+  `"${getRandomItem(kinyarwandaDict.proverbs)}," niko ${secondaryCharacter.name} yavugaga {conversations}, ariko ijambo ryamugumamo nk’umwambi`,
+  `${mainCharacter.name} yari afite igitekerezo gishya, ariko gutinyuka kukigerageza byari urugamba rwonyine`,
+  `Uwo munsi, ${mainCharacter.name} yahisemo {verbs} mu buryo butandukanye, arenga imbibi z'ubwoba bwe`
+];
     
     // Resolution section sentence templates
     const resolutionTemplates = [
-        `Nyuma y'imyaka myinshi, ${mainCharacter.name} yashoboye kumenya impamvu y'ibyo byose`,
-        `${mainCharacter.name} yasanze {cultural} ari iby'ingenzi mu buzima`,
-        `${secondaryCharacter.name} na ${mainCharacter.name} bakomeje kuganira ku {conflict}`,
-        `Ubuzima bwa ${mainCharacter.name} bwahindutse burundu`,
-        `${mainCharacter.name} yamenye ko {emotions} ari ingenzi kuruta {emotions}`,
-        `${secondaryCharacter.name} {conversations}: "Byose biragenda neza ubu"`,
-        `${mainCharacter.name} ntiyari akiri umuntu {descriptions} yari asanzwe ari`,
-        `${setting.place} havugwaga inkuru ya ${mainCharacter.name} nk'urugero rwiza`,
-        `"${getRandomItem(kinyarwandaDict.proverbs)}" byabaye ukuri mu buzima bwa ${mainCharacter.name}`,
-        `${mainCharacter.name} yize isomo rikomeye: ${getRandomItem(kinyarwandaDict.proverbs)}`,
-        `Igihe ${mainCharacter.name} yatekereje ku mateka ye, yarasekeye`
-    ];
+  `Nyuma y'imyaka myinshi, ${mainCharacter.name} yashoboye kumenya impamvu y'ibyo byose, aramenya n’icyo agomba kubahoho`,
+  `${mainCharacter.name} yasanze {cultural} ari iby'ingenzi mu buzima, bimufasha kwiyubaka`,
+  `${secondaryCharacter.name} na ${mainCharacter.name} bakomeje kuganira ku {conflict}, barababarirana burundu`,
+  `Ubuzima bwa ${mainCharacter.name} bwahindutse burundu, ntiyongera kuba nka mbere`,
+  `${mainCharacter.name} yamenye ko {emotions} ari ingenzi kuruta {emotions}, maze aratekana`,
+  `${secondaryCharacter.name} {conversations}: "Byose biragenda neza ubu", abitewe n'uko bari babanye`,
+  `${mainCharacter.name} ntiyari akiri umuntu {descriptions} yari asanzwe ari, yari amaze kuba mushya`,
+  `${setting.place} havugwaga inkuru ya ${mainCharacter.name} nk'urugero rwiza rw’ubutwari n’urukundo`,
+  `"${getRandomItem(kinyarwandaDict.proverbs)}" byabaye ukuri mu buzima bwa ${mainCharacter.name}, amaze kunyura mu bihe bigoye`,
+  `${mainCharacter.name} yize isomo rikomeye: ${getRandomItem(kinyarwandaDict.proverbs)}, kandi ntazigera yibagirwa`,
+  `Igihe ${mainCharacter.name} yatekereje ku mateka ye, yarasekeye, yumva ko byose byari bifite impamvu`,
+  `${mainCharacter.name} yagarutse aho byose byatangiriye, ariko noneho afite ubwenge n'umutima mushya`,
+  `Nubwo hari byinshi yabuze, ${mainCharacter.name} yasanze agaciro k’ubuzima kari mu kubabarira no gukomeza urugendo`,
+  `${secondaryCharacter.name} yanditse inkuru ya ${mainCharacter.name}, kugira ngo abandi bayigiraho`,
+  `${mainCharacter.name} yabaye umuyobozi ukomeye, wubahwa kubera ibyo yanyuzemo`
+];
     
     // Generate the story sections with varying paragraph lengths to reach >10,000 characters
     const introduction = [];
