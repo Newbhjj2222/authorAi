@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="rw" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umwanditsi w'Inkuru - Kinyarwanda Story Generator</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-4">
+        <header class="text-center mb-5">
+            <h1 class="display-4">Umwanditsi w'Inkuru</h1>
+            <p class="lead">Ukore inkuru nziza mu Kinyarwanda</p>
+            
+            <!-- Theme toggle switch -->
+            <div class="form-check form-switch position-absolute end-0 top-0 mt-3 me-3">
+                <input class="form-check-input" type="checkbox" id="themeToggle">
+                <label class="form-check-label" for="themeToggle">
+                    <span id="darkModeIcon">🌙</span>
+                    <span id="lightModeIcon" class="d-none">☀️</span>
+                </label>
+            </div>
+        </header>
+
+        <div class="row mb-4">
+            <div class="col-md-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="storyPrompt" class="form-label">Andika insanganyamatsiko y'inkuru:</label>
+                            <input type="text" class="form-control" id="storyPrompt" 
+                                placeholder="Urugero: urukundo, ubuhanuzi, amateka, cyangwa ubuzima">
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="episodicToggle">
+                            <label class="form-check-label" for="episodicToggle">Inkuru ifite ibice byinshi (Episodic story)</label>
+                        </div>
+                        
+                        <div id="episodeControls" class="row mb-3 d-none">
+                            <div class="col-md-6">
+                                <label for="currentEpisode" class="form-label">Igice cya:</label>
+                                <input type="number" class="form-control" id="currentEpisode" min="1" value="1">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="totalEpisodes" class="form-label">Ibice byose:</label>
+                                <input type="number" class="form-control" id="totalEpisodes" min="2" value="3">
+                            </div>
+                        </div>
+                        
+                        <button id="generateBtn" class="btn btn-primary w-100">Kora Inkuru</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="storyContainer" class="row mb-4 d-none">
+            <div class="col-md-10 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2 class="h5 mb-0">Inkuru Yawe</h2>
+                            <span id="episodeInfo" class="badge bg-secondary d-none">Igice 1/3</span>
+                        </div>
+                        <div class="btn-group">
+                            <button id="copyBtn" class="btn btn-sm btn-secondary">
+                                <span id="copyText">Kora kopi</span>
+                                <span id="copiedText" class="d-none">Byakopye!</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="loadingIndicator" class="text-center py-5 d-none">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Biracyakora...</span>
+                            </div>
+                            <p class="mt-2">Inkuru iracyakora, nyamuneka tegereza gato...</p>
+                        </div>
+                        <div id="storyContent" class="story-content"></div>
+                    </div>
+                    <div id="episodeNav" class="card-footer d-none">
+                        <div class="d-flex justify-content-between">
+                            <button id="prevEpisodeBtn" class="btn btn-sm btn-outline-secondary" disabled>
+                                &larr; Igice cyabanje
+                            </button>
+                            <button id="nextEpisodeBtn" class="btn btn-sm btn-primary">
+                                Igice gikurikira &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-muted mt-5">
+            <p>Umwanditsi w'Inkuru &copy; 2023 - Inkuru zandikwa mu Kinyarwanda</p>
+            <p class="small">Byose bikorwa mu buryo bwa ofurine, nta nteruro yawe ijya ahandi.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
